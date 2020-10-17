@@ -9,7 +9,7 @@ const about = () => {
     <Layout>
       <SEO title='About' />
       <h1 className='pageTitle'>About Me</h1>
-      <ContactForm />
+      <p>Here is some stuff about me....eventually.</p>
     </Layout>
   );
 };
