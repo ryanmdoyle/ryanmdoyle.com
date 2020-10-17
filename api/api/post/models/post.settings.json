@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "publishedOn": {
+      "required": true,
+      "type": "datetime"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "categories": {
+      "collection": "category",
+      "via": "posts"
+    }
+  }
+}

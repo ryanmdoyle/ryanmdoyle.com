@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_infos",
+  "info": {
+    "name": "site"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "ownerEmail": {
+      "type": "email"
+    }
+  }
+}
